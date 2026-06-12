@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CuteDrama Premium V3</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0a0a12;
+color:#fff;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(10,10,18,.95);
+backdrop-filter:blur(10px);
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+border-bottom:1px solid #222;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#a855f7;
+}
+
+.menu{
+display:flex;
+gap:20px;
+}
+
+.menu a:hover{
+color:#a855f7;
+}
+
+.search{
+background:#181828;
+padding:8px 12px;
+border-radius:10px;
+}
+
+.search input{
+background:none;
+border:none;
+outline:none;
+color:white;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(to top, #0a0a12, rgba(0,0,0,.4)),
+url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 8%;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:65px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+color:#ddd;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#a855f7;
+border-radius:10px;
+font-weight:600;
+}
+
+.section{
+padding:60px 5%;
+}
+
+.section-title{
+font-size:30px;
+margin-bottom:20px;
+}
+
+.drama-row{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#151520;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.card-content{
+padding:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.layout{
+display:grid;
+grid-template-columns:3fr 1fr;
+gap:25px;
+}
+
+.sidebar{
+position:sticky;
+top:90px;
+height:fit-content;
+}
+
+.widget{
+background:#151520;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.widget h3{
+margin-bottom:15px;
+color:#a855f7;
+}
+
+.ad-box{
+height:250px;
+border:2px dashed #a855f7;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:15px;
+text-align:center;
+}
+
+footer{
+background:#111;
+padding:60px 5%;
+margin-top:50px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.footer-grid h3{
+margin-bottom:15px;
+color:#a855f7;
+}
+
+.footer-grid ul{
+list-style:none;
+}
+
+.footer-grid li{
+margin-bottom:8px;
+}
+
+.copyright{
+text-align:center;
+margin-top:30px;
+color:#999;
+}
+
+@media(max-width:900px){
+
+.menu{
+display:none;
+}
+
+.layout{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:16px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">CuteDrama</div>
+
+<nav class="menu">
+<a href="#">Home</a>
+<a href="#">K-Drama</a>
+<a href="#">C-Drama</a>
+<a href="#">J-Drama</a>
+<a href="#">Thai Drama</a>
+<a href="#">Reviews</a>
+</nav>
+
+<div class="search">
+<input type="text" placeholder="Search...">
+</div>
+
+</header>
+
+<section class="hero">
+<div class="hero-content">
+
+<h1>Your Ultimate Drama Hub</h1>
+
+<p>
+Discover trending K-Dramas, C-Dramas,
+J-Dramas, Reviews, Rankings and Entertainment News.
+</p>
+
+<a href="#" class="btn">Explore Now</a>
+
+</div>
+</section>
+
+<div class="section">
+
+<div class="layout">
+
+<main>
+
+<h2 class="section-title">🔥 Trending Dramas</h2>
+
+<div class="drama-row">
+
+<div class="card">
+<img src="https://picsum.photos/400/600?1">
+<div class="card-content">
+<h3>Squid Game</h3>
+<p>Latest review and analysis.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/600?2">
+<div class="card-content">
+<h3>The Glory</h3>
+<p>Top rated revenge drama.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/600?3">
+<div class="card-content">
+<h3>Hidden Love</h3>
+<p>Popular romance drama.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/600?4">
+<div class="card-content">
+<h3>Weak Hero</h3>
+<p>Action school drama.</p>
+</div>
+</div>
+
+</div>
+
+</main>
+
+<aside class="sidebar">
+
+<div class="widget">
+<h3>Adsterra Banner</h3>
+<div class="ad-box">
+Paste Adsterra Code Here
+</div>
+</div>
+
+<div class="widget">
+<h3>Monetag Banner</h3>
+<div class="ad-box">
+Paste Monetag Code Here
+</div>
+</div>
+
+<div class="widget">
+<h3>Trending Today</h3>
+<ul>
+<li>Squid Game</li>
+<li>The Glory</li>
+<li>Weak Hero</li>
+<li>Hidden Love</li>
+<li>Alchemy of Souls</li>
+</ul>
+</div>
+
+</aside>
+
+</div>
+</div>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>About CuteDrama</h3>
+<p>
+Premium destination for Asian drama reviews,
+recommendations and entertainment news.
+</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Privacy Policy</a></li>
+</ul>
+</div>
+
+<div>
+<h3>Categories</h3>
+<ul>
+<li>K-Drama</li>
+<li>C-Drama</li>
+<li>J-Drama</li>
+<li>Thai Drama</li>
+</ul>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 CuteDrama. All Rights Reserved.
+</div>
+
+</footer>
+
+</body>
+</html>
